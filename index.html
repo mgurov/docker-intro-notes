@@ -24,8 +24,195 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Docker crash intro</h1>
+					<p>
+						<small>via Mykola Gurov</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>What is docker?</h2>
+					<p>
+					   Container v VM
+					</p>
+				</section>
+
+				<section>
+					<h2>What is docker?</h2>
+					<p>Daemon v client</p>
+					<p>via REST http/socket</p>
+				</section>
+
+				<section>
+					<h2>Mac and Windows</h2>
+					<p>Running inside a linux VM</p>
+				</section>
+
+				<section>
+					<h2>Anatomy</h2>
+					<ul>
+						<li>Container</li>
+						<li>Image</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>TODO</h2>
+					<ul>
+						<li>single process</li>
+						<li>amorphous</li>
+					</ul>
+				</section>
+
+
+				<section>
+                    
+                    <section data-transition="none">
+                        <h3>Code highlighting</h3>
+                        <p>Reason #2 for use reveal.js</p>
+                        <pre><code class="hlgo" data-trim>
+scene.AddNewSequence(
+    &tweens.Step{
+        What: arrow.rotate(-180),
+        Duration: 2 * time.Second,
+        Easing: tweens.EaseOutBounce
+    },
+    &tweens.Step{What: arrow.rotate(0),Duration: 2 * time.Second},
+).Repeat()
+                        </code></pre>
+                        <small class="fragment">Scroll down to learn more</small>
+                    </section>
+
+                    <section data-transition="none">
+                        <p>Customized to draw attention</p>
+                        <pre><code class="hlgo" data-trim data-noescape data-escape-2>
+<dim>scene.AddNewSequence(</dim>
+    &tweens.Step{
+        What: arrow.rotate(-180),
+        Duration: 2 * time.Second,
+        Easing: tweens.EaseOutBounce
+    },<dim>
+    &tweens.Step{What: arrow.rotate(0),Duration: 2 * time.Second},
+).Repeat()</dim>
+                        </code></pre>
+                    </section>
+                    
+                    <section data-transition="none">
+                        <p>And shift it</p>
+                        <pre><code class="hlgo" data-trim data-noescape data-escape-2>
+<dim>scene.AddNewSequence(
+    &tweens.Step{
+        What: arrow.rotate(-180),
+        Duration: 2 * time.Second,
+        Easing: tweens.EaseOutBounce
+    },</dim>
+    &tweens.Step{What: arrow.rotate(0),Duration: 2 * time.Second},
+<dim>).Repeat()</dim>
+                        </code></pre>
+                    </section>
+                    
+                    <section data-transition="none">
+                        <p>Xml-based code highlighting is trickier for this technique</p>
+                        <p>Due to the way the <a href="https://css-tricks.com/almanac/properties/o/opacity/#Noteworthy">CSS opacity works</a></p>
+                        <p>Fully escaped <code>&lt;configuration&gt;</code> wraps the rest</p>
+                        <pre><code class="hlxml" data-trim>
+<configuration>
+    <watchInterval>500</watchInterval></dim>
+    <logDate>default</logDate>
+    <verbose>true</verbose>
+    <autoPull>always</autoPull>
+    <images>
+        ...
+    </images>
+</configuration>        
+                        </code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <p>Xml-based code highlighting is trickier for this technique</p>
+                        <p>Due to the way the <a href="https://css-tricks.com/almanac/properties/o/opacity/#Noteworthy">CSS opacity works</a></p>
+                        <p>Non-escaped <code>&lt;configuration&gt;</code> cannot be dimmed</p>
+                        <pre><code class="hlxml" data-trim data-noescape data-escape-2>
+<dim><configuration>
+    <watchInterval>500</watchInterval></dim>
+    <logDate>default</logDate>
+    <dim><verbose>true</verbose>
+    <autoPull>always</autoPull>
+    <images>
+        ...
+    </images>
+</configuration></dim>        
+                        </code></pre>
+                    </section>
+
+
+				</section>
+
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+                    <p class="fragment"> 
+                        <small>Although could admittedly work better</small>
+                    </p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section id="pdf-export">
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="?print-pdf#pdf-export">exported to PDF</a></p>
+                    <p>From <a href="https://github.com/hakimel/reveal.js#pdf-export" target="blank">Chrome only</a></p>					
+				</section>
+
 			</div>
 		</div>
 
